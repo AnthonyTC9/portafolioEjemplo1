@@ -18,7 +18,7 @@ body{
 
 .titulo{
     color:#642a73;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 60px;
 }
@@ -28,7 +28,7 @@ header{
     width:100%;
     height:600px;
     background: #bc4e9c;
-    background: -webkit-linear-gradient(o right, hsla(317, 45%, 52%, 0.664), hsla(340, 95%, 50%, 0.459)), url(../img/portada.jpg);
+    background: -webkit-linear-gradient(o right, hwb(317 31% 26% / 0.664), hsla(340, 95%, 50%, 0.459)), url(../img/portada.jpg);
     background: linear-gradient(to right, hsla(317, 45%, 52%, 0.664), hsla(340, 95%, 50%, 0.459)), url(../img/portada.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -49,6 +49,7 @@ nav > a{
 
 nav > a:hover{
     text-decoration: underline;
+    color: white;
 }
 header .textos-header{
     display:flex;
@@ -68,6 +69,46 @@ header .textos-header{
     color:#fff;
     font-weight: 300;
 }
+.textos-header h3{
+    font-size: 15px;
+    color:#fff;
+    font-weight: 300;
+    margin: 10px 100px 0 100px;
+    padding-bottom: 50px;
+
+}
+
+.textos-header button{
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #de889c, #a3415a);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+
+    z-index: 9;
+    border: 0;
+    transition: box-shadow .2s;
+}
+.textos-header button:hover{
+    box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+
 .wave{
     position:absolute;
     bottom:0;
@@ -127,13 +168,13 @@ main .sobre-nosotros{
 }
 
 .imagen-port{
-    width:24%;
-    margin-bottom: 10px;
-    height:150px;
+    width: 48%;
+    margin-bottom: 12px;
+    height: 319px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 50%);
 }
 
 .imagen-port > img{
@@ -196,8 +237,9 @@ main .sobre-nosotros{
     display:block;
 }
 .cards .card > .contenido-texto-card{
-    width: 60%;
+    width: 50%;
     color: #fff;
+    text-align: center;
 }
 
 .cards .card > .contenido-texto-card p{
@@ -226,14 +268,18 @@ main .sobre-nosotros{
     width:90%;
 }
 
-.servicio-ind h3{
-    margin: 10px 0;
+/*.servicio-ind h3{
+   /* margin: 10px 0;
+}*/
+.servicio-ind h4{    
+    font-size: 18.72px;    
 }
 
 .servicio-ind p{
     font-weight:300;
-    text-align:justify;
+    text-align:justify;   
 }
+
 
 /*Footer*/
 
@@ -340,6 +386,10 @@ footer{
     .textos-header h2{
         font-size: 20px;
     }
+    .textos-header h3{
+        font-size: 10px;
+        width: 200px;
+    }
 
     /*About US*/
 
@@ -392,4 +442,100 @@ footer{
     .titulo-final{
         font-size: 20px;
     }
+}
+
+.espacio{
+    margin:10px;
+    background-color: white !important;
+    height: 251px !important;
+    
+}
+
+.color-letras{
+    color: black !important;
+    font: caption !important;
+}
+
+.tamaño{
+    font-weight: bold !important;
+    font-size: 20px !important;
+
+}
+
+.margin-lateral{
+    max-width: 100% !important;
+    width:67%;
+
+}
+.justificar{
+    text-align: justify;
+}
+.tamaño{
+    font-size: 1.45rem !important;
+}
+
+
+/* CSS */
+.button-62 {
+  background: linear-gradient(to bottom right, #EF4765, #bc4e9c);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem #bc4e9c;
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem #bc4e9c;
+}
+
+.input-estilo{
+
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+    vertical-align: baseline;
+    font-weight: 400;
+    line-height: 1.29;
+    letter-spacing: .16px;
+    border-radius: 0;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #8d8d8d;
+    background-color: white;
+    padding: 0 16px;
+    color: #161616;
+    transition: background-color 70ms cubic-bezier(.2,0,.38,.9),outline 70ms cubic-bezier(.2,0,.38,.9); 
+
+}
+
+.espacio-form{
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 50%);
+    border-radius: 26px;
+
+
+    background: #bc4e9c;
+    background: -webkit-linear-gradient(to right, hwb(317 31% 26% / 0.664), hsla(340, 95%, 50%, 0.459)), url();
+    background: linear-gradient(to right, hsla(317, 45%, 52%, 0.664), hsla(340, 95%, 50%, 0.459)), url();   
+
 }
